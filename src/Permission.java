@@ -9,7 +9,7 @@
  */
 public class Permission
 {
-    public Permission(String player, Permissions permission, boolean allowed)
+    public Permission(String player, PermissionType permission, boolean allowed)
     {
         _Player = player;
         _Permission = permission;
@@ -24,7 +24,7 @@ public class Permission
     /**
      * Die Art des Einstellung
      */
-    Permissions _Permission;
+    PermissionType _Permission;
     /**
      * Gibt an, ob die Einstellung ein Verbot oder ein Recht ist
      */
@@ -38,7 +38,7 @@ public class Permission
     {
         return _Player;
     }
-    public Permissions GetPermission()
+    public PermissionType GetPermission()
     {
         return _Permission;
     }

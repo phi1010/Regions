@@ -128,4 +128,9 @@ public class Listener extends PluginListener
         return false;
     }
 
+    public boolean onItemUse(Player player, Block blockPlaced, Block blockClicked, Item item)
+    {
+        return false;
+    }
+
 }
