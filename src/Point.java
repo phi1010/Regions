@@ -1,21 +1,21 @@
 class Point
     {
-        Point(int x, int y)
+        Point(int x, int z)
         {
             _X = x;
-            _Y = y;
+            _Z = z;
         }
 
-        int _X, _Y;
+        int _X, _Z;
 
         public int GetX()
         {
             return _X;
         }
 
-        public int GetY()
+        public int GetZ()
         {
-            return _Y;
+            return _Z;
         }
 
     }

@@ -1,4 +1,5 @@
 
+import java.awt.Toolkit;
 import java.util.logging.Logger;
 
 public class Listener extends PluginListener
@@ -13,6 +14,7 @@ public class Listener extends PluginListener
     @Override
     public void onLogin(Player player)
     {
+        Toolkit.getDefaultToolkit().beep();
     }
 
     @Override

@@ -20,7 +20,7 @@ public class Regions extends Plugin
     static final String Reply_NotAllowed_Inventory = "You are not allowed to open chests here.";
     static final String Reply_NotAllowed_Enter = "You are not allowed to enter this zone.";
     static final String Reply_NotAllowed_Stay = "You are not allowed to stay in this zone.\nYou will be teleported to spawn.";
-    
+    static final String Reply_Edit_Begin ="You can now edit the Zone %1 with a book.";
     // </editor-fold>
     // <editor-fold defaultstate="collapsed" desc="Commandtext">
     /**
@@ -156,21 +156,18 @@ public class Regions extends Plugin
     }// </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Check">
-    public Region GetRegion(Player player)
+    public Region GetRegion(double x, double y, double z)
     {
         try
         {
             int regionCount = _Regions.size();
-            Location playerLocation = player.getLocation();
-            double x = playerLocation.x;
-            double y = playerLocation.y;
             Region region = null;
             {
                 List<Region> playerRegions = new LinkedList();
                 for (int i1 = 0; i1 < regionCount; i1++)
                 {
                     Region region1 = _Regions.get(i1);
-                    if (region1.IsInside(x, y))
+                    if (region1.IsInside(x, y, z))
                     {
                         for (int i2 = 0; i2 < playerRegions.size(); i2++)
                         {
