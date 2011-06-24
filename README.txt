@@ -1,2 +1,1 @@
-Regions wird ein Plugin für den Minecraft Server Mod "Canary b5" ähnlich "Realms". Die Quellcodedokumentation ist in Deutsch.
-Dieses Plugin wird evtl. nur mit einer modifizierten Canary Version funktionieren, da Canary b5 bei der Verwaltung von DoubleChest's eine benötigte Methode fehlt.
+Regions sollte ein Plugin fÃ¼r den Minecraft Server Mod "Canary" Ã¤hnlich "Realms" werden. Dieses Projekt ist eingestellt.
